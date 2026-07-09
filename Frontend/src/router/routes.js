@@ -6,9 +6,9 @@ import { renderlogin } from "../views/auth/login";
 import { renderRegister } from "../views/auth/register";
 import { renderHome } from "../views/home/home";
 import { renderNotFound } from "../views/not-found";
-import { renderCourseDetail } from "../views/tasks/course-detail";
-import { renderCourselist } from "../views/tasks/course-list";
-import { renderCoursePlayer } from "../views/tasks/course-player";
+import { renderCourseDetail } from "../views/courses/course-detail";
+import { renderCourselist } from "../views/courses/course-list";
+import { renderCoursePlayer } from "../views/courses/course-player";
 import { renderDashboard } from "../views/users/dashboard";
 import { renderProfile } from "../views/users/profile";
 
