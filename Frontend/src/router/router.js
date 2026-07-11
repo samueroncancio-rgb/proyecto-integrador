@@ -1,4 +1,5 @@
 import { routes, notFoundView } from "./routes.js";
+import { setupHeader } from "../components/header.js";
 
 export async function renderRoute() {
 
@@ -52,6 +53,10 @@ export async function renderRoute() {
 
     app.innerHTML = route.render();
 
+    // Inicializa los eventos del header
+    setupHeader();
+
+    // Ejecuta el setup específico de la vista
     if (route.setup) {
         await route.setup();
     }
